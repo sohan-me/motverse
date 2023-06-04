@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load humanize %}
+{% block title %} Car Zone | Dashboard {% endblock %}
+{% block content %}
+
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>Dashboard</h1>
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'tabs:home' %}">Home</a></li>
+                <li class="active">{{user.username}}</li>
+                {% include 'includes/messages.html' %}
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
+
+<!--   Dashboard Start   -->
+
+<div class="container mt-50 mb-50">
+	<div class="main-title" style="text-align:left !important;">
+            <h1>Welcome <span>{{user.username}}</span></h1>
+            <p>Here are the cars that you have inquired about</p>
+        </div>
+    {% if inquiry %}
+	<table class="table table-hover">
+	  <thead>
+		<tr>
+		  <th scope="col">#</th>
+		  <th scope="col">Car Name</th>
+		  <th scope="col">Location</th>
+		  <th scope="col">Price</th>
+		  <th scope="col">Action</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		{% for i in inquiry %}
+		<tr>
+		  <th scope="row">{{forloop.counter}}</th>
+		  <td>{{i.car_title}}</td>
+		  <td>{{i.city}}</td>
+		  <td>${{i.cars.price}}</td>
+		  <td><a href="{% url 'cars:car_details' i.cars.id %}" class="btn btn-outline-dark">View Car</a></td>
+		</tr>
+		{% endfor %}
+	  </tbody>
+	</table>
+	{% else %}
+		<p>You don't have any inquiry's right now.</p>
+	{% endif %}
+</div>
+
+<!--   Dashboard End   -->
+
+{% endblock %}
