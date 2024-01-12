@@ -44,12 +44,21 @@ Follow these steps to set up the Car Selling Website on your local machine:
 ```bash```
 # Clone the repository
 git clone https://github.com/ripnoob/motverse
+
+# Open terminal & go to project directory
 cd motverse
-Create virtual env
+
+# Create virtual env
+python -m venv env
+&& source env/bin/activate
 
 # Install dependencies
 pip3 install -r requirements.txt
+
+# Databse configuration
 Create Database and Configure your own (/prime/settings.py)
+
+# Run project
 cd prime
 python manage.py makemigrations
 python manage.py migrate
