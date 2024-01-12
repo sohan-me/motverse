@@ -59,8 +59,7 @@ pip3 install -r requirements.txt
 Create Database and Configure your own (/prime/settings.py)
 
 # Run project
-cd prime
-python manage.py makemigrations
+python manage.py makemigrations &&
 python manage.py migrate
 
  
