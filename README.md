@@ -1,4 +1,4 @@
-Motoverse -- Car Selling Website
+Motoverse -- Car Selling Website using Django
 
 Welcome to the Car Selling Website project! This platform allows users to register, login, make inquiries about cars, and search for available vehicles.
 
