@@ -60,6 +60,6 @@ Create Database and Configure your own (/prime/settings.py)
 
 # Run project
 python manage.py makemigrations &&
-python manage.py migrate
+python manage.py migrate && python manage.py runserver
 
  
