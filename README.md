@@ -2,40 +2,74 @@ Motoverse -- Car Selling Website using Django
 
 Welcome to the Car Selling Website project! This platform allows users to register, login, make inquiries about cars, and search for available vehicles.
 
-Features:
+## Table of Contents
 
-    User Authentication and Registration:
-        Users can register accounts with the site.
-        Authentication system for secure login.
-        Integration with django-allauth for additional authentication features.
+- [Features](#features)
+  - [User Authentication and Registration](#user-authentication-and-registration)
+  - [Admin Dashboard](#admin-dashboard)
+  - [Rich Text Content Editing](#rich-text-content-editing)
+  - [Search Functionality](#search-functionality)
+  - [Multiselect Fields](#multiselect-fields)
+  - [Debugging and Development Tools](#debugging-and-development-tools)
+  - [Image Handling](#image-handling)
+  - [OAuth and Social Authentication](#oauth-and-social-authentication)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Configuration](#configuration)
+  - [Environment Variables](#environment-variables)
+  - [Database Setup](#database-setup)
+- [Usage](#usage)
+  - [Running the Application](#running-the-application)
+  - [Admin Dashboard](#admin-dashboard-usage)
 
-    Admin Dashboard:
-        Utilize django-jazzmin for a stylish and feature-rich admin dashboard.
-        Admins can manage car listings, user inquiries, and user accounts.
+## Features
 
-    Rich Text Content Editing:
-        Implement django-ckeditor to allow users to create rich text content for car descriptions or blog posts.
+### User Authentication and Registration
 
-    Search Functionality:
-        Implement advanced search features for cars (e.g., make, model, year, price range).
-        Use sqlparse for SQL query parsing and formatting.
+- Users can register accounts with the site.
+- Authentication system for secure login.
+- Integration with django-allauth for additional authentication features.
 
-    Multiselect Fields:
-        Utilize django-multiselectfield for allowing multiple selections in fields, such as car features or specifications.
+### Admin Dashboard
 
-    Debugging and Development Tools:
-        django-debug-toolbar for debugging and profiling during development.
+- Utilize django-jazzmin for a stylish and feature-rich admin dashboard.
+- Admins can manage car listings, user inquiries, and user accounts.
 
-    Image Handling:
-        Use Pillow for image processing and handling car images.
+### Rich Text Content Editing
 
+- Implement django-ckeditor to allow users to create rich text content for car descriptions or blog posts.
 
-    OAuth and Social Authentication:
-        Enable social authentication using python3-openid and oauthlib to allow users to sign in with their social media accounts.
+### Search Functionality
 
-    JWT Authentication:
-        Utilize PyJWT for JSON Web Token authentication, adding an additional layer of security.
+- Implement advanced search features for cars (e.g., make, model, year, price range).
+- Use sqlparse for SQL query parsing and formatting.
 
+### Multiselect Fields
+
+- Utilize django-multiselectfield for allowing multiple selections in fields, such as car features or specifications.
+
+### Debugging and Development Tools
+
+- Use django-debug-toolbar for debugging and profiling during development.
+
+### Image Handling
+
+- Use Pillow for image processing and handling car images.
+
+### OAuth and Social Authentication
+
+- Enable social authentication using python3-openid and oauthlib to allow users to sign in with their social media accounts.
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed on your system:
+
+- Python: [Download here](https://www.python.org/downloads/)
+- Django: Install using `pip install django`
+- PostgreSQL: [Download here](https://www.postgresql.org/download/)
 
 ## Installation
 
